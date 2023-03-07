@@ -1,0 +1,10 @@
+def dtob(decimal):
+    binary = ""
+    while decimal > 0:
+        remainder = decimal % 2
+        binary = str(remainder) + binary
+        decimal = decimal // 2
+    return binary
+decimal_number = int(input("Enter a number"))
+binary_number = dtob(decimal_number)
+print(f"The binary representation of {decimal_number} is {binary_number}")
