@@ -1,0 +1,12 @@
+def first_letter_cap(word):
+    if word.isalpha():
+        s = word[0].upper() + ','
+        return s
+    else:
+        return ""  
+sentence = "This is a Cat"
+list = sentence.split()
+req_string = ""
+for word in list:
+    req_string = req_string + first_letter_cap(word)
+print(req_string)
